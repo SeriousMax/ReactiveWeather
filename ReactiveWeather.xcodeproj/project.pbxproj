@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58BDE9A22046C022001F01D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDE9A12046C022001F01D8 /* AppDelegate.swift */; };
+		58BDE9A42046C022001F01D8 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDE9A32046C022001F01D8 /* WeatherView.swift */; };
+		58BDE9A72046C022001F01D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58BDE9A52046C022001F01D8 /* Main.storyboard */; };
+		58BDE9A92046C022001F01D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58BDE9A82046C022001F01D8 /* Assets.xcassets */; };
+		58BDE9AC2046C022001F01D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58BDE9AA2046C022001F01D8 /* LaunchScreen.storyboard */; };
+		58BDE9B72046C022001F01D8 /* PoliticomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDE9B62046C022001F01D8 /* PoliticomTests.swift */; };
+		58BDE9C22046C022001F01D8 /* PoliticomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDE9C12046C022001F01D8 /* PoliticomUITests.swift */; };
+		58BDE9D02046C5D9001F01D8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDE9CF2046C5D9001F01D8 /* Weather.swift */; };
+		58BDE9D62046C921001F01D8 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDE9D52046C921001F01D8 /* NetworkAPI.swift */; };
+		58BDE9DB2046CB66001F01D8 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDE9DA2046CB66001F01D8 /* WeatherViewModel.swift */; };
+		58EF14C32048413900E097C3 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF14C22048413900E097C3 /* Units.swift */; };
+		58EF14C920484F3300E097C3 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF14C820484F3300E097C3 /* Env.swift */; };
+		58EF14CC204850CD00E097C3 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF14CB204850CD00E097C3 /* Converter.swift */; };
+		58EF14CF2048612200E097C3 /* Double+RoundToPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EF14CE2048612200E097C3 /* Double+RoundToPlaces.swift */; };
+		DC78A85C9B34D3CDCBECDC6F /* Pods_ReactiveWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13B7D0A06809C935C222D88 /* Pods_ReactiveWeather.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58BDE9B32046C022001F01D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58BDE9962046C022001F01D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58BDE99D2046C022001F01D8;
+			remoteInfo = Politicom;
+		};
+		58BDE9BE2046C022001F01D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58BDE9962046C022001F01D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58BDE99D2046C022001F01D8;
+			remoteInfo = Politicom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36E7523813500BF8EE73C710 /* Pods-Politicom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Politicom.release.xcconfig"; path = "Pods/Target Support Files/Pods-Politicom/Pods-Politicom.release.xcconfig"; sourceTree = "<group>"; };
+		4A641550C2C783E41C91FCF0 /* Pods-Politicom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Politicom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Politicom/Pods-Politicom.debug.xcconfig"; sourceTree = "<group>"; };
+		58BDE99E2046C022001F01D8 /* ReactiveWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BDE9A12046C022001F01D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58BDE9A32046C022001F01D8 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		58BDE9A62046C022001F01D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58BDE9A82046C022001F01D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58BDE9AB2046C022001F01D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58BDE9AD2046C022001F01D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BDE9B22046C022001F01D8 /* ReactiveWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BDE9B62046C022001F01D8 /* PoliticomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticomTests.swift; sourceTree = "<group>"; };
+		58BDE9B82046C022001F01D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BDE9BD2046C022001F01D8 /* ReactiveWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BDE9C12046C022001F01D8 /* PoliticomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticomUITests.swift; sourceTree = "<group>"; };
+		58BDE9C32046C022001F01D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58BDE9CF2046C5D9001F01D8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		58BDE9D52046C921001F01D8 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		58BDE9DA2046CB66001F01D8 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		58EF14C22048413900E097C3 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		58EF14C820484F3300E097C3 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		58EF14CB204850CD00E097C3 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		58EF14CE2048612200E097C3 /* Double+RoundToPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+RoundToPlaces.swift"; sourceTree = "<group>"; };
+		8D00AF5C829EA33705DE42C0 /* Pods-ReactiveWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveWeather/Pods-ReactiveWeather.release.xcconfig"; sourceTree = "<group>"; };
+		A13B7D0A06809C935C222D88 /* Pods_ReactiveWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38D87F04AA994C711EF63BA /* Pods-ReactiveWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveWeather/Pods-ReactiveWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		D43556C6D6D500ACE51052A1 /* Pods_Politicom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Politicom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58BDE99B2046C022001F01D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC78A85C9B34D3CDCBECDC6F /* Pods_ReactiveWeather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58BDE9AF2046C022001F01D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58BDE9BA2046C022001F01D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2628617D867F7BEFE0A06A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D43556C6D6D500ACE51052A1 /* Pods_Politicom.framework */,
+				A13B7D0A06809C935C222D88 /* Pods_ReactiveWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58909B7820498D4B00324013 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE9A52046C022001F01D8 /* Main.storyboard */,
+				58BDE9AA2046C022001F01D8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		58BDE9952046C022001F01D8 = {
+			isa = PBXGroup;
+			children = (
+				58BDE9A02046C022001F01D8 /* ReactiveWeather */,
+				58BDE9B52046C022001F01D8 /* ReactiveWeatherTests */,
+				58BDE9C02046C022001F01D8 /* ReactiveWeatherUITests */,
+				58BDE99F2046C022001F01D8 /* Products */,
+				A6FAB39BEA0486436DD99F55 /* Pods */,
+				2628617D867F7BEFE0A06A75 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58BDE99F2046C022001F01D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE99E2046C022001F01D8 /* ReactiveWeather.app */,
+				58BDE9B22046C022001F01D8 /* ReactiveWeatherTests.xctest */,
+				58BDE9BD2046C022001F01D8 /* ReactiveWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58BDE9A02046C022001F01D8 /* ReactiveWeather */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE9D12046C85E001F01D8 /* Models */,
+				58BDE9D72046CAD5001F01D8 /* ViewModels */,
+				58BDE9D82046CAE4001F01D8 /* Views */,
+				58BDE9D42046C8FF001F01D8 /* Network */,
+				58EF14CD2048610900E097C3 /* Extensions */,
+				58FC70AB2049926500652A6B /* Types */,
+				58EF14CA204850B800E097C3 /* Tools */,
+				58FC70AA20498F4F00652A6B /* Resources */,
+				58BDE9A12046C022001F01D8 /* AppDelegate.swift */,
+			);
+			path = ReactiveWeather;
+			sourceTree = "<group>";
+		};
+		58BDE9B52046C022001F01D8 /* ReactiveWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE9B62046C022001F01D8 /* PoliticomTests.swift */,
+				58BDE9B82046C022001F01D8 /* Info.plist */,
+			);
+			path = ReactiveWeatherTests;
+			sourceTree = "<group>";
+		};
+		58BDE9C02046C022001F01D8 /* ReactiveWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE9C12046C022001F01D8 /* PoliticomUITests.swift */,
+				58BDE9C32046C022001F01D8 /* Info.plist */,
+			);
+			path = ReactiveWeatherUITests;
+			sourceTree = "<group>";
+		};
+		58BDE9D12046C85E001F01D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE9CF2046C5D9001F01D8 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58BDE9D42046C8FF001F01D8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE9D52046C921001F01D8 /* NetworkAPI.swift */,
+				58EF14C820484F3300E097C3 /* Env.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		58BDE9D72046CAD5001F01D8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE9DA2046CB66001F01D8 /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		58BDE9D82046CAE4001F01D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58BDE9A32046C022001F01D8 /* WeatherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58EF14CA204850B800E097C3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				58EF14CB204850CD00E097C3 /* Converter.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		58EF14CD2048610900E097C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58EF14CE2048612200E097C3 /* Double+RoundToPlaces.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		58FC70AA20498F4F00652A6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58909B7820498D4B00324013 /* Storyboards */,
+				58BDE9A82046C022001F01D8 /* Assets.xcassets */,
+				58BDE9AD2046C022001F01D8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		58FC70AB2049926500652A6B /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				58EF14C22048413900E097C3 /* Units.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		A6FAB39BEA0486436DD99F55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A641550C2C783E41C91FCF0 /* Pods-Politicom.debug.xcconfig */,
+				36E7523813500BF8EE73C710 /* Pods-Politicom.release.xcconfig */,
+				A38D87F04AA994C711EF63BA /* Pods-ReactiveWeather.debug.xcconfig */,
+				8D00AF5C829EA33705DE42C0 /* Pods-ReactiveWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58BDE99D2046C022001F01D8 /* ReactiveWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58BDE9C62046C022001F01D8 /* Build configuration list for PBXNativeTarget "ReactiveWeather" */;
+			buildPhases = (
+				8C6634BAF3BA45C285544158 /* [CP] Check Pods Manifest.lock */,
+				58BDE99A2046C022001F01D8 /* Sources */,
+				58BDE99B2046C022001F01D8 /* Frameworks */,
+				58BDE99C2046C022001F01D8 /* Resources */,
+				389D6B78842353ACA4CAD936 /* [CP] Embed Pods Frameworks */,
+				A73A00B413AFEA34F35760F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveWeather;
+			productName = Politicom;
+			productReference = 58BDE99E2046C022001F01D8 /* ReactiveWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58BDE9B12046C022001F01D8 /* ReactiveWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58BDE9C92046C022001F01D8 /* Build configuration list for PBXNativeTarget "ReactiveWeatherTests" */;
+			buildPhases = (
+				58BDE9AE2046C022001F01D8 /* Sources */,
+				58BDE9AF2046C022001F01D8 /* Frameworks */,
+				58BDE9B02046C022001F01D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58BDE9B42046C022001F01D8 /* PBXTargetDependency */,
+			);
+			name = ReactiveWeatherTests;
+			productName = PoliticomTests;
+			productReference = 58BDE9B22046C022001F01D8 /* ReactiveWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58BDE9BC2046C022001F01D8 /* ReactiveWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58BDE9CC2046C022001F01D8 /* Build configuration list for PBXNativeTarget "ReactiveWeatherUITests" */;
+			buildPhases = (
+				58BDE9B92046C022001F01D8 /* Sources */,
+				58BDE9BA2046C022001F01D8 /* Frameworks */,
+				58BDE9BB2046C022001F01D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58BDE9BF2046C022001F01D8 /* PBXTargetDependency */,
+			);
+			name = ReactiveWeatherUITests;
+			productName = PoliticomUITests;
+			productReference = 58BDE9BD2046C022001F01D8 /* ReactiveWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58BDE9962046C022001F01D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "SIT-DEV";
+				TargetAttributes = {
+					58BDE99D2046C022001F01D8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					58BDE9B12046C022001F01D8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58BDE99D2046C022001F01D8;
+					};
+					58BDE9BC2046C022001F01D8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58BDE99D2046C022001F01D8;
+					};
+				};
+			};
+			buildConfigurationList = 58BDE9992046C022001F01D8 /* Build configuration list for PBXProject "ReactiveWeather" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58BDE9952046C022001F01D8;
+			productRefGroup = 58BDE99F2046C022001F01D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58BDE99D2046C022001F01D8 /* ReactiveWeather */,
+				58BDE9B12046C022001F01D8 /* ReactiveWeatherTests */,
+				58BDE9BC2046C022001F01D8 /* ReactiveWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58BDE99C2046C022001F01D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BDE9AC2046C022001F01D8 /* LaunchScreen.storyboard in Resources */,
+				58BDE9A92046C022001F01D8 /* Assets.xcassets in Resources */,
+				58BDE9A72046C022001F01D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58BDE9B02046C022001F01D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58BDE9BB2046C022001F01D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		389D6B78842353ACA4CAD936 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveWeather/Pods-ReactiveWeather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveWeather/Pods-ReactiveWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6634BAF3BA45C285544158 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A73A00B413AFEA34F35760F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveWeather/Pods-ReactiveWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58BDE99A2046C022001F01D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58EF14CF2048612200E097C3 /* Double+RoundToPlaces.swift in Sources */,
+				58BDE9D02046C5D9001F01D8 /* Weather.swift in Sources */,
+				58BDE9D62046C921001F01D8 /* NetworkAPI.swift in Sources */,
+				58BDE9A42046C022001F01D8 /* WeatherView.swift in Sources */,
+				58EF14CC204850CD00E097C3 /* Converter.swift in Sources */,
+				58EF14C920484F3300E097C3 /* Env.swift in Sources */,
+				58EF14C32048413900E097C3 /* Units.swift in Sources */,
+				58BDE9A22046C022001F01D8 /* AppDelegate.swift in Sources */,
+				58BDE9DB2046CB66001F01D8 /* WeatherViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58BDE9AE2046C022001F01D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BDE9B72046C022001F01D8 /* PoliticomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58BDE9B92046C022001F01D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BDE9C22046C022001F01D8 /* PoliticomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58BDE9B42046C022001F01D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58BDE99D2046C022001F01D8 /* ReactiveWeather */;
+			targetProxy = 58BDE9B32046C022001F01D8 /* PBXContainerItemProxy */;
+		};
+		58BDE9BF2046C022001F01D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58BDE99D2046C022001F01D8 /* ReactiveWeather */;
+			targetProxy = 58BDE9BE2046C022001F01D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58BDE9A52046C022001F01D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BDE9A62046C022001F01D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58BDE9AA2046C022001F01D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BDE9AB2046C022001F01D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58BDE9C42046C022001F01D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL_ENDPOINT = "https://api.openweathermap.org";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OPENWEATHER_API_KEY = 2460c9fc703b5bf4155ba083ecd57bd5;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58BDE9C52046C022001F01D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL_ENDPOINT = "https://api.openweathermap.org";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OPENWEATHER_API_KEY = 2460c9fc703b5bf4155ba083ecd57bd5;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58BDE9C72046C022001F01D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38D87F04AA994C711EF63BA /* Pods-ReactiveWeather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58C3AZHNAG;
+				INFOPLIST_FILE = "$(SRCROOT)/ReactiveWeather/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max-dev.ReactiveWeather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		58BDE9C82046C022001F01D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D00AF5C829EA33705DE42C0 /* Pods-ReactiveWeather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58C3AZHNAG;
+				INFOPLIST_FILE = "$(SRCROOT)/ReactiveWeather/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max-dev.ReactiveWeather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		58BDE9CA2046C022001F01D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58C3AZHNAG;
+				INFOPLIST_FILE = PoliticomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max-dev.PoliticomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveWeather.app/ReactiveWeather";
+			};
+			name = Debug;
+		};
+		58BDE9CB2046C022001F01D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58C3AZHNAG;
+				INFOPLIST_FILE = PoliticomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max-dev.PoliticomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveWeather.app/ReactiveWeather";
+			};
+			name = Release;
+		};
+		58BDE9CD2046C022001F01D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58C3AZHNAG;
+				INFOPLIST_FILE = PoliticomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max-dev.PoliticomUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Politicom;
+			};
+			name = Debug;
+		};
+		58BDE9CE2046C022001F01D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58C3AZHNAG;
+				INFOPLIST_FILE = PoliticomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max-dev.PoliticomUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Politicom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58BDE9992046C022001F01D8 /* Build configuration list for PBXProject "ReactiveWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BDE9C42046C022001F01D8 /* Debug */,
+				58BDE9C52046C022001F01D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58BDE9C62046C022001F01D8 /* Build configuration list for PBXNativeTarget "ReactiveWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BDE9C72046C022001F01D8 /* Debug */,
+				58BDE9C82046C022001F01D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58BDE9C92046C022001F01D8 /* Build configuration list for PBXNativeTarget "ReactiveWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BDE9CA2046C022001F01D8 /* Debug */,
+				58BDE9CB2046C022001F01D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58BDE9CC2046C022001F01D8 /* Build configuration list for PBXNativeTarget "ReactiveWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BDE9CD2046C022001F01D8 /* Debug */,
+				58BDE9CE2046C022001F01D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58BDE9962046C022001F01D8 /* Project object */;
+}

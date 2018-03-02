@@ -1,0 +1,10 @@
+UserInterfaceState.xcuserstate
+.DS_Store
+Pods
+ReactiveWeather.xcworkspace
+Podfile.lock
+build/Pods.build/Debug-iphoneos/Pods-ReactiveWeather.build
+build
+xcuserdata/
+ReactiveWeatherTests/
+ReactiveWeatherUITests/
