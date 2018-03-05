@@ -42,7 +42,9 @@ class WeatherViewModel {
         }
     }
     
-    private let provider = MoyaProvider<NetworkAPI>()
+    
+    /// Init provider with network logger just to see what do we send and receive
+    private let provider = MoyaProvider<NetworkAPI>(plugins: [NetworkLoggerPlugin(verbose: true)])
     
     private let disposeBag = DisposeBag()
     
@@ -101,6 +103,20 @@ class WeatherViewModel {
             return "\(temp.rounded(toPlaces: 1))°\(units.tempMark)"
         }
         return ""
+    }
+    
+    /// This is the test method just to check if our Codable model
+    /// can be successfully encoded and send to the server
+    func testRequest() {
+        if let weather = self.weather {
+            print("sending test request...")
+            disposeBag.insert(
+                provider.rx.request(.updateWeather(newWeather: weather))
+                    .subscribe({ (event) in
+                        print("test request done: \(event)")
+                    })
+            )
+        }
     }
 
 }

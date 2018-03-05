@@ -8,19 +8,21 @@
 
 import Foundation
 
-class Weather: Decodable {
+/// Now the model is implements Codable protocol,
+/// so it can be encoded to JSON and send to server
+class Weather: Codable {
     var name: String?
     var main: Main?
     var weather: [WeatherDetails]?
 }
 
-class WeatherDetails: Decodable {
+class WeatherDetails: Codable {
     var description: String?
     var main: String?
     var icon: String?
 }
 
-class Main: Decodable {
+class Main: Codable {
     var temp: Double?
     var pressure: Double?
     var humidity: Double?

@@ -19,6 +19,8 @@ class WeatherView: UIViewController {
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var tempSelector: UISegmentedControl!
     
+    @IBOutlet weak var testButton: UIButton!
+    
     private let viewModel = WeatherViewModel()
     
     private let disposeBag = DisposeBag()
@@ -58,6 +60,12 @@ class WeatherView: UIViewController {
             tempSelector.rx.selectedSegmentIndex
             .map{ Units(index: $0) }
             .bind(to: viewModel.units)
+        )
+        
+        /// Test binding UIButton tap event to viewModel method
+        disposeBag.insert(
+            testButton.rx.tap
+                .bind { self.viewModel.testRequest() }
         )
         
     }

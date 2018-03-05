@@ -11,7 +11,11 @@ import Foundation
 import Moya
 
 enum NetworkAPI: TargetType {
+    
     case getWeather(city: String, units: String)
+    
+    /// Test method
+    case updateWeather(newWeather: Weather)
     
     var baseURL: URL {
         return URL(string: "\(Env.baseUrl())/data/2.5")!
@@ -21,6 +25,8 @@ enum NetworkAPI: TargetType {
         switch self {
         case .getWeather:
             return "weather"
+        case .updateWeather:
+            return "weather"
         }
     }
     
@@ -28,6 +34,8 @@ enum NetworkAPI: TargetType {
         switch self {
         case .getWeather:
             return .get
+        case .updateWeather:
+            return .put
         }
     }
     
@@ -40,6 +48,9 @@ enum NetworkAPI: TargetType {
         case .getWeather(let city, let units):
             let params = ["q" : city, "units" : units, "appid" : Env.apiKey()]
             return .requestCompositeData(bodyData: Data(), urlParameters: params)
+        case .updateWeather(let newWeather):
+            /// Here we put our Codable model into request body
+            return .requestJSONEncodable(newWeather)
         }
     }
     
@@ -47,3 +58,4 @@ enum NetworkAPI: TargetType {
         return ["Content-Type" : "application/json"]
     }
 }
+
