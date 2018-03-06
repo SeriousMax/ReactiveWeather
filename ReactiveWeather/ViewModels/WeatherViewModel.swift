@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 import Moya
 import Nuke
 
@@ -15,27 +16,33 @@ class WeatherViewModel {
     
     // MARK: Properties
     
-    let cityName = Variable("")
-    let temperature = Variable("")
-    let searchText = Variable("")
-    let icon = Variable(UIImage())
-    let units = Variable(Units(index: 0))
+    let cityName = BehaviorRelay(value: "")
+    let temperature = BehaviorRelay(value: "")
+    let searchText = BehaviorRelay(value: "")
+    let icon = BehaviorRelay(value: UIImage())
+    let units = BehaviorRelay(value: Units(index: 0))
     
     var weather: Weather? {
         
         /// This fires each time new weather did set
         didSet {
             if let name = weather?.name {
-                self.cityName.value = name
+                DispatchQueue.main.async {
+                    self.cityName.accept(name)
+                }
             }
             if let temp = weather?.main?.temp, let units = units.value {
-                self.temperature.value = "\(temp.rounded(toPlaces: 1))°\(units.tempMark)"
+                DispatchQueue.main.async {
+                    self.temperature.accept("\(temp.rounded(toPlaces: 1))°\(units.tempMark)")
+                }
             }
             if let iconName = weather?.weather?[0].icon {
                 let url = "\(Env.baseUrl())/img/w/\(iconName).png"
                 Manager.shared.loadImage(with: URL(string: url)!, completion: {
                     if let image = $0.value {
-                       self.icon.value = image
+                        DispatchQueue.main.async {
+                            self.icon.accept(image)
+                        }
                     }
                 })
             }
